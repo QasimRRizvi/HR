@@ -145,6 +145,30 @@ Author URL:https://themeforest.net/user/WebFirefly
 	            return false;
 	        });
 
+
+		/*===================================================
+		  Javascript for handling content &  character image
+		=====================================================*/
+		// Optimalisation: Store the references outside the event handler:
+		var $window = $(window);
+		var $headerTitleContent = $('#header-title-content');
+	
+		function checkWidth() {
+			var windowsize = $window.width();
+			if (windowsize < 751) {
+				//if the window is greater than 768px wide then hide header charachter
+				$headerTitleContent.removeClass('my-auto');
+				$headerTitleContent.css("margin-top", "80px");
+			} else {
+				$headerTitleContent.addClass('my-auto');
+				$headerTitleContent.css('margin-top',"");
+			}
+		}
+		// Execute on load
+		checkWidth();
+		// Bind event listener
+		$(window).resize(checkWidth);
+			
 });
 
 

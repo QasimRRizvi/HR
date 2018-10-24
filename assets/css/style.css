@@ -501,6 +501,7 @@ about css
 }
 .left-content h3 {
   text-transform: capitalize;
+  text-align: center;
   font-weight: 900;
   font-size: 30px;
 }
@@ -509,6 +510,9 @@ about css
   margin: 20px 0;
   color: #484848;
   font-weight: 700;
+}
+.left-content p {
+  text-align: center;
 }
 .single-bar h4 {
   font-size: 16px;

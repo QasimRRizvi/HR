@@ -1,22 +1,51 @@
+/*------------------------------------------------------------------
+Project:  GOK Web
+Version:  1.0.0
+Created at: 18-oct-2018
+Last change:  28-oct-2018
+Assigned to:  Qasim Rizvi
+Primary use:  Company profiling
+-------------------------------------------------------------------*/
+
 /*=======
 index css
 =========
-1.base css
-2.background-image css
-3.main-index css
-4.navigation css
-5.hero-area css
-6.about css
-7.service css
-8.portfolio css
-9.testimonial css
-10.blog css
-11.contact css
-12.footer css
-13.scroll to top css
-14.side fixed image left
+1.fonts
+2.base css
+3.background-image css
+4.main-index css
+5.navigation css
+6.hero-area css
+7.about css
+8.service css
+9.portfolio css
+10.testimonial css
+11.blog css
+12.contact css
+13.footer css
+14.scroll to top css
+14.side fixed image left css
 =======*/
 
+
+/*======
+fonts
+=======*/
+
+@font-face {
+  font-family: Source-Sans-Pro-Bold;
+  src: url('./../fonts/source-sans-pro/SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: Source-Sans-Pro-Semibold;
+  src: url('./../fonts/source-sans-pro/SourceSansPro-Semibold.ttf'); 
+}
+
+@font-face {
+  font-family: Source-Sans-Pro-Reguar;
+  src: url('./../fonts/source-sans-pro/SourceSansPro-Regular.ttf'); 
+}
 
 /*======
 base css
@@ -41,7 +70,7 @@ h6 {
     color: #333;
 }
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: Source-Sans-Pro-Reguar, 'Raleway', sans-serif;
     background-color: #fff;
     color:#484848;
     font-size: 15px;
@@ -73,7 +102,8 @@ textarea {
 }
 .section-title h2 {
   font-size: 40px;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-family: Source-Sans-Pro-Bold;
   text-transform: capitalize;
   text-align: center;
   margin: 0;
@@ -212,6 +242,7 @@ navigation css
 }
 .nav-wraper .navbar-nav .nav-item{
   padding:0px 5px;
+  font-family: Source-Sans-Pro-Semibold;
 }
 .nav-wraper .navbar-nav .nav-link {
   position: relative;
@@ -334,7 +365,8 @@ hero-area css
   color: #fff;
   text-transform: capitalize;
   font-size: /* 50px */ 35px;
-  font-weight: 900;
+  /* font-weight: 900; */
+  font-family: Source-Sans-Pro-Bold;
 }
 .hero-content p{
   color:#fff;
@@ -504,7 +536,8 @@ about css
 .left-content h3 {
   text-transform: capitalize;
   text-align: center;
-  font-weight: 900;
+  /* font-weight: 900; */
+  font-family: Source-Sans-Pro-Bold;
   font-size: 30px;
 }
 .left-content h6 {
@@ -681,7 +714,8 @@ portfolio css
 .project-title h5 {
   color: #fff;
   text-transform: capitalize;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-family: Source-Sans-Pro-Semibold;
   font-size:18px;
 }
 .project-title h4 {
@@ -720,7 +754,8 @@ portfolio css
 .portfolio-content h3 {
   text-transform: capitalize;
   text-align: left;
-  font-weight: 900;
+  /* font-weight: 900; */
+  font-family: Source-Sans-Pro-Bold;
   font-size: 30px;
   margin-bottom: 31px;
   line-height: 1.4em;
@@ -1060,7 +1095,7 @@ scroll to top css
 }
 
 /*====================
-side fixed image left
+side fixed image left css
 ======================*/
 .side-fixed-image-l {
   position: absolute;

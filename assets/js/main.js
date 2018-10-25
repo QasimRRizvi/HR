@@ -1,7 +1,5 @@
 /*=========================================================
-Template Name: Haribo - Onepage Portfolio Template
-Author Name: Mohammad Masum
-Author URL:https://themeforest.net/user/WebFirefly
+Template Name: GOK - Geeks Of Kolachi
 ==========================================================*/
 
 (function ($) {

@@ -542,7 +542,7 @@ about css
 service css
 ==========*/
 #services {
-  background: #f6f6f6;
+  background: #fff;
 }
 #services .row .col-lg-4.col-md-6:nth-child(4) .single-service-item, #services .row .col-lg-4.col-md-6:nth-child(5) .single-service-item, #services .row .col-lg-4.col-md-6:nth-child(6) .single-service-item {
     margin-bottom: 0;
@@ -601,7 +601,7 @@ service css
 portfolio css
 ===========*/
 #portfolio {
-  background: #fff;
+  background: #f4f9fc;
 }
 #portfolio .project-lists .col-lg-4.col-md-6:nth-child(4) .single-work, #portfolio .project-lists .col-lg-4.col-md-6:nth-child(5) .single-work, #portfolio .project-lists .col-lg-4.col-md-6:nth-child(6) .single-work {
     margin-bottom: 0;
@@ -710,6 +710,40 @@ portfolio css
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   visibility: visible;
+}
+
+.portfolio-content img {
+  position: absolute;
+}
+.portfolio-content h3 {
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 31px;
+  line-height: 1.4em;
+  margin-top: 50px;
+}
+.portfolio-content p {
+  text-align: left;
+}
+.portfolio-row {
+  margin-bottom: 70px;
+}
+.portfolio-row-first {
+  margin-top: -30px;
+}
+.portfolio-image-first {
+  margin-left: -35px;
+  margin-top: 5px;
+}
+.portfolio-image-sec {
+  margin-left: -35px;
+  margin-top: 40px;
+}
+.portfolio-image-third {
+  margin-left: -50px;
+  margin-top: 20px;
 }
 
 /*=============

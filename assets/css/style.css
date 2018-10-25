@@ -959,10 +959,10 @@ footer css
   margin-bottom:15px;
 }
 .sub-footer {
-  background: #1E1E1E;
-  color: #f1f1f1;
+  background: #ffffff;
+  color: #1E1E1E;
   padding: 20px 0;
-  border-top: 1px solid #333;
+  border-top: 1px solid #d6d1d1;
 }
 .sub-footer p {
   margin: 0;
@@ -970,6 +970,11 @@ footer css
 .footer-area .social-links a:hover{
   color: #3c40c6;
   background: #fff;
+}
+.footer-links-container a {
+  margin-left: 14px;
+  text-decoration: none;
+  color: #1E1E1E
 }
 
 /*===============

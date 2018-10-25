@@ -14,6 +14,7 @@ index css
 11.contact css
 12.footer css
 13.scroll to top css
+14.side fixed image left
 =======*/
 
 
@@ -753,6 +754,61 @@ testimonial css
 #clients {
   background: #f6f6f6;
 }
+.testimonial-area {
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.testimonial-title h2 {
+  color: white;
+}
+.testimonial-container {
+  position: relative;
+  height: 250px;
+  margin-bottom: 30px;
+  background-color: #ffffff1f;
+  border-radius: 5px;
+  padding: 20px;
+}
+/*[///////testimonial-container-first/////]
+*/
+/* ===== testimonial-avatar ====*/
+.t-avatar {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+}
+/* ===== testimonial-title ====*/
+.t-title {
+  padding: 0px;
+}
+.t-title h5 {
+  color: white;
+  font-weight: 600;
+}
+.t-title p {
+  color: #ffffff9c;
+  line-height: 0.5em
+}
+/*[///////testimonial-container-second/////]
+*/
+.testimonial-c-s {
+  max-height: 50px;
+}
+.testimonial-c-s p {
+  color: white;
+  font-size: 70px;
+  margin-top: -15px;
+  margin-bottom: 0px;
+}
+/*[///////testimonial-container-third/////]
+*/
+.testimonial-c-t p {
+  color: white;
+  text-align: center;
+}
 .testimonial-author {
   margin: 0 auto;
   margin-top: 60px;
@@ -1012,66 +1068,4 @@ side fixed image left
   margin-top: -93px;
   max-width: 400px;
   z-index: 98;
-}
-
-/*===========
-testimonial css
-============*/
-.testimonial-area {
-  background-size: cover;
-  background-position: center;
-  background-color: #ddd;
-  background-attachment: fixed;
-  z-index: 1;
-}
-.testimonial-title h2 {
-  color: white;
-}
-.testimonial-container {
-  position: relative;
-  height: 250px;
-  margin-bottom: 30px;
-  background-color: #ffffff1f;
-  border-radius: 5px;
-  padding: 20px;
-}
-/*[///////testimonial-container-first/////
-]*/
-/* .testimonial-c-f {
-  
-} */
-/* ===== testimonial-avatar ====*/
-.t-avatar {
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
-}
-/* ===== testimonial-title ====*/
-.t-title {
-  padding: 0px;
-}
-.t-title h5 {
-  color: white;
-  font-weight: 600;
-}
-.t-title p {
-  color: #ffffff9c;
-  line-height: 0.5em
-}
-/*[///////testimonial-container-second/////
-]*/
-.testimonial-c-s {
-  max-height: 50px;
-}
-.testimonial-c-s p {
-  color: white;
-  font-size: 70px;
-  margin-top: -15px;
-  margin-bottom: 0px;
-}
-/*[///////testimonial-container-third/////
-]*/
-.testimonial-c-t p {
-  color: white;
-  text-align: center;
 }

@@ -996,3 +996,14 @@ scroll to top css
   color: #3C40C6;
   border-color: #3C40C6;
 }
+
+/*====================
+side fixed image left
+======================*/
+.side-fixed-image-l {
+  position: absolute;
+  margin-left: -280px;
+  margin-top: -93px;
+  max-width: 400px;
+  z-index: 99;
+}

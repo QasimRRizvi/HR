@@ -147,27 +147,57 @@ Template Name: GOK - Geeks Of Kolachi
 		/*===================================================
 		  Javascript for handling content &  character image
 		=====================================================*/
-		// Optimalisation: Store the references outside the event handler:
-		var $window = $(window);
-		var $headerTitleContent = $('#header-title-content');
-	
-		function checkWidth() {
-			var windowsize = $window.width();
-			if (windowsize < 751) {
-				//if the window is greater than 768px wide then hide header charachter
-				$headerTitleContent.removeClass('my-auto');
-				$headerTitleContent.css("margin-top", "80px");
-			} else {
-				$headerTitleContent.addClass('my-auto');
-				$headerTitleContent.css('margin-top',"");
+			// Optimalisation: Store the references outside the event handler:
+			var $window = $(window);
+			var $headerTitleContent = $('#header-title-content');
+		
+			function checkWidth() {
+				var windowsize = $window.width();
+				if (windowsize < 751) {
+					//if the window is greater than 768px wide then hide header charachter
+					$headerTitleContent.removeClass('my-auto');
+					$headerTitleContent.css("margin-top", "80px");
+				} else {
+					$headerTitleContent.addClass('my-auto');
+					$headerTitleContent.css('margin-top',"");
+				}
 			}
-		}
-		// Execute on load
-		checkWidth();
-		// Bind event listener
-		$(window).resize(checkWidth);
+			// Execute on load
+			checkWidth();
+			// Bind event listener
+			$(window).resize(checkWidth);
 			
-});
+		/*===================================================
+		  Javascript for handling animations
+		=====================================================*/
+			// SERVICE SECTION VARS START
+				var $serSection = $("#ser-section").position();
+				var $serSec1 = $("#ser-sec-1");
+				var $serSec2 = $("#ser-sec-2");
+				var $serSec3 = $("#ser-sec-3");
+			// SERVICE SECTION VARS END
+			$(document).scroll(function () {
+				var documentTop = $(this).scrollTop();
+				
+				if (documentTop > ($serSection.top - 350)) { // -350 so things don't overlap
+					$serSec1.addClass("fadeInLeft");
+					$serSec2.addClass("fadeInUp");
+					$serSec3.addClass("fadeInRight");
+					$serSec1.css("visibility", "visible");
+					$serSec2.css("visibility", "visible");
+					$serSec3.css("visibility", "visible");
+				}
+				else {
+					$serSec1.removeClass("fadeInLeft");
+					$serSec2.removeClass("fadeInUp");
+					$serSec3.removeClass("fadeInRight");
+					$serSec1.css("visibility", "hidden");
+					$serSec2.css("visibility", "hidden");
+					$serSec3.css("visibility", "hidden");
+				}
+			});
+
+	});
 
 
 

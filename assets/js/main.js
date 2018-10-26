@@ -170,6 +170,10 @@ Template Name: GOK - Geeks Of Kolachi
 		/*===================================================
 		  Javascript for handling animations
 		=====================================================*/
+			// HOME SECTION VARS START
+				var $homeSection = $("#home").position().top + $("#home").height();
+				var $homeImg = $("#home-img");
+			// HOME SECTION VARS END
 			// SERVICE SECTION VARS START
 				var $serSection = $("#ser-section").position();
 				var $serSec1 = $("#ser-sec-1");
@@ -178,7 +182,13 @@ Template Name: GOK - Geeks Of Kolachi
 			// SERVICE SECTION VARS END
 			$(document).scroll(function () {
 				var documentTop = $(this).scrollTop();
-				
+				if (documentTop > $homeSection) {
+					$homeImg.css("visibility", "hidden");
+					$homeImg.removeClass("fadeInRight");
+				} else {
+					$homeImg.css("visibility", "visible");
+					$homeImg.addClass("fadeInRight");
+				}
 				if (documentTop > ($serSection.top - 350)) { // -350 so things don't overlap
 					$serSec1.addClass("fadeInLeft");
 					$serSec2.addClass("fadeInUp");

@@ -73,6 +73,7 @@ body {
     color:#484848;
     font-size: 15px;
     line-height: 1.8;
+    overflow-x: hidden;
 }
 html, body{
   height:100%;

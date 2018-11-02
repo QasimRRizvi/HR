@@ -419,10 +419,26 @@ hero-area css
   -webkit-transition: .3s;
   transition: .3s;
 }
+.social-links a.socio-facebook:hover {
+  color: #fff;
+  background: #3c40c6;
+}
+.social-links a.socio-twitter:hover {
+  color: #fff;
+  background: #4099FF;
+}
+.social-links a.socio-linkedin:hover {
+  color: #fff;
+  background: #0073b1;
+}
 .social-links a:hover {
   color: #3c40c6;
   background: #fff;
 }
+/* .social-links a:hover {
+  color: #3c40c6;
+  background: #fff;
+} */
 .typed-title {
   font-size: /* 30px */ 22px;
   font-weight: 700;

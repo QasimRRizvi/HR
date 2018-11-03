@@ -50,81 +50,81 @@ Template Name: GOK - Geeks Of Kolachi
 		/*======================
 		Javascript for barfiller 
 		=======================*/
-    		$('#bar1').barfiller({
-    			barColor: '#484848',
-    		});
-    		$('#bar2').barfiller({
-    			barColor: '#484848'
-    		});
-    		$('#bar3').barfiller({
-    			barColor: '#484848'
-    		});
-    		$('#bar4').barfiller({
-    			barColor: '#484848'
-    		});
+    		// $('#bar1').barfiller({
+    		// 	barColor: '#484848',
+    		// });
+    		// $('#bar2').barfiller({
+    		// 	barColor: '#484848'
+    		// });
+    		// $('#bar3').barfiller({
+    		// 	barColor: '#484848'
+    		// });
+    		// $('#bar4').barfiller({
+    		// 	barColor: '#484848'
+    		// });
 
 		/*======================
 		javaScript for filtering 
 		=======================*/
-			$(".project-filter span").on("click", function(){
+			// $(".project-filter span").on("click", function(){
 
-				$(".project-filter span").removeClass("active");
-				$(this).addClass("active");
+			// 	$(".project-filter span").removeClass("active");
+			// 	$(this).addClass("active");
 
-				var selector = $(this).attr("data-filter");
-				$(".project-lists").isotope({
-					filter : selector,
-				});
-			});
+			// 	var selector = $(this).attr("data-filter");
+			// 	$(".project-lists").isotope({
+			// 		filter : selector,
+			// 	});
+			// });
 		
 
 		/*============================
 		  Javascript for magnificPopup
 		============================*/
-	 		$(".project-lists").magnificPopup({
+	 		// $(".project-lists").magnificPopup({
 
-		 		delegate: '.gallary',
-		 		type: 'image',
-		 		gallery: {
-		            enabled: true
-		        }
-	 		});
+		 	// 	delegate: '.gallary',
+		 	// 	type: 'image',
+		 	// 	gallery: {
+		    //         enabled: true
+		    //     }
+	 		// });
 
 	 	/*============================
 		  Javascript for ripple
 		============================*/
-			$('.home-11.hero-area').ripples({
-	            resolution: 512,
-	            dropRadius: 20,
-	            perturbance: 0.1,
-	        });	
+			// $('.home-11.hero-area').ripples({
+	        //     resolution: 512,
+	        //     dropRadius: 20,
+	        //     perturbance: 0.1,
+	        // });	
 	    /*=================================
 		  Javascript for hero area carousel
 		==================================*/
-			$(".hero-area-slide").owlCarousel({
-				items:1,
-				autoplay:true,
-				autoplayTimeout: 5000,
-				animateOut: 'fadeOut',
-				loop:true,
-				nav:true,
-				navText:["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
-				dots:false
-			});
+			// $(".hero-area-slide").owlCarousel({
+			// 	items:1,
+			// 	autoplay:true,
+			// 	autoplayTimeout: 5000,
+			// 	animateOut: 'fadeOut',
+			// 	loop:true,
+			// 	nav:true,
+			// 	navText:["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
+			// 	dots:false
+			// });
 
 		
 		/*===================================
 		  Javascript for testimonial carousel
 		====================================*/
-			$(".testimonial-carousel").owlCarousel({
-				items:1,
-				autoplay:false,
-				autoplayTimeout: 5000,
-				loop:true,
-				nav:true,
-				navText:["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
-				dots:false
-			});
+			// $(".testimonial-carousel").owlCarousel({
+			// 	items:1,
+			// 	autoplay:false,
+			// 	autoplayTimeout: 5000,
+			// 	loop:true,
+			// 	nav:true,
+			// 	navText:["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
+			// 	dots:false
+			// });
 
 
 		/*=============================
@@ -143,7 +143,6 @@ Template Name: GOK - Geeks Of Kolachi
 	            }, 1000);
 	            return false;
 	        });
-
 
 		/*===================================================
 		  Javascript for handling content &  character image

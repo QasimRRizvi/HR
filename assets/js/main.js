@@ -131,7 +131,7 @@ Template Name: GOK - Geeks Of Kolachi
 		  Javascript for scroll to top
 		==============================*/
 			$(window).on("scroll", function () {
-			if ($(this).scrollTop() > 250) {
+			if ($(this).scrollTop() > 450) {
 				$('.scroll-up').fadeIn();
 			} else {
 				$('.scroll-up').fadeOut();

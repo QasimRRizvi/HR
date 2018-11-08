@@ -164,6 +164,16 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background: url('../images/preloader.gif') center no-repeat #fff;
+  text-align: center;
+}
 .visibility-hidden {
   visibility: hidden;
 }

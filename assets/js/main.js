@@ -9,8 +9,9 @@ Template Name: GOK - Geeks Of Kolachi
     Javascript for preloader
     =======================*/
    $(window).on("load", function(){
-		   	$(".preloader").fadeOut();
-			$("#home-img").addClass("fadeInRight")		   
+		$(".preloader").fadeOut();
+		$(".se-pre-con").fadeOut();
+		$("#home-img").addClass("fadeInRight")		   
 	})
 	
 	$(document).ready(function(){
